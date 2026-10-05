@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     {
         moveH = Input.GetAxis("Horizontal") * moveSpeed;
         moveV = Input.GetAxis("Vertical") * moveSpeed;
-        rb.velocity = new Vector2(moveH, moveV);//OPTIONAL rb.MovePosition();
+        rb.linearVelocity = new Vector2(moveH, moveV);//OPTIONAL rb.MovePosition();
 
         Vector2 direction = new Vector2(moveH, moveV);
 
